@@ -295,5 +295,24 @@ public class WineCellar {
         return s;
     }
 
+    public String command_error_html()
+    {
+        String s = "<!DOCTYPE html>\n" +
+                "<html>\n" +
+                "<head>\n" +
+                "<style>\n" +
+                "* {font-family: \"Lucida Console\", \"Courier New\", monospace;}\n" +
+                "body {margin: 0;display: flex;justify-content: center;align-items: center;min-height: 100vh;}\n" +
+                ".items {border: 3px solid #800000;padding: 15px;font-family: Georgia, serif;}\n" +
+                "table {text-align: center;border-collapse: collapse;border: 5px solid #ad0000;background-color: #fff9e5;}\n" +
+                ".title {color: #f00;font-family: Verdana, Geneva, sans-serif;}\n" +
+                "</style>\n" +
+                "</head>\n" +
+                "<body>\n" +
+                "<h1>Risorsa insesistente</h1></body>\n</html>";
+
+        return s;
+    }
+
 
 }

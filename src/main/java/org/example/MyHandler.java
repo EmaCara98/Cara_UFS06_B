@@ -84,7 +84,9 @@ public class MyHandler implements HttpHandler {
             case "red":
                 if(method.equals("POST"))
                 {
-                    result = WineCellar.getInstance().red();
+                    result = "{\"wines\":";
+                    result += WineCellar.getInstance().red();
+                    result += "}";
                 }
                 else
                 {
@@ -94,7 +96,9 @@ public class MyHandler implements HttpHandler {
             case "white":
                 if(method.equals("POST"))
                 {
-                    result = WineCellar.getInstance().white();
+                    result = "{\"wines\":";
+                    result += WineCellar.getInstance().white();
+                    result += "}";
                 }
                 else
                 {
@@ -104,7 +108,9 @@ public class MyHandler implements HttpHandler {
             case "sorted_by_name":
                 if(method.equals("POST"))
                 {
-                    result = WineCellar.getInstance().sorted_by_name();
+                    result = "{\"wines\":";
+                    result += WineCellar.getInstance().sorted_by_name();
+                    result += "}";
                 }
                 else
                 {
@@ -114,7 +120,9 @@ public class MyHandler implements HttpHandler {
             case "sorted_by_price":
                 if(method.equals("POST"))
                 {
-                    result = WineCellar.getInstance().sorted_by_price();
+                    result = "{\"wines\":";
+                    result += WineCellar.getInstance().sorted_by_price();
+                    result += "}";
                 }
                 else
                 {
@@ -122,7 +130,14 @@ public class MyHandler implements HttpHandler {
                 }
                 break;
             default:
-                result = "Comando inesistente";
+                if(method.equals("POST"))
+                {
+                    result = "Comando inesistente";
+                }
+                else
+                {
+                    result = WineCellar.getInstance().command_error_html();
+                }
         }
 
         return result;
