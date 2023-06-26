@@ -34,14 +34,17 @@ public class ClientHandler implements Runnable{
                 /********* COMANDI CLIENT *********/
                 switch(s)
                 {
-                    case "all":
-                        out.println(WareHouse.getInstance().all());
+                    case "red":
+                        out.println(WineCellar.getInstance().red());
                         break;
-                    case "all_sorted":
-                        out.println(WareHouse.getInstance().all_sorted());
+                    case "white":
+                        out.println(WineCellar.getInstance().white());
                         break;
-                    case "more_expensive":
-                        out.println(WareHouse.getInstance().more_expensive());
+                    case "sorted_by_name":
+                        out.println(WineCellar.getInstance().sorted_by_name());
+                        break;
+                    case "sorted_by_price":
+                        out.println(WineCellar.getInstance().sorted_by_price());
                         break;
                     default:
                         out.println("Comando inesistente");
@@ -49,8 +52,8 @@ public class ClientHandler implements Runnable{
             }
 
             System.out.println("Disconnected: " + address + "with port: " + port);
-            WareHouse.getInstance().remove(this);
-            System.out.println("Now we have " + WareHouse.getInstance().nOfClients() + " connected client");
+            WineCellar.getInstance().remove(this);
+            System.out.println("Now we have " + WineCellar.getInstance().nOfClients() + " connected client");
 
             return true;
 

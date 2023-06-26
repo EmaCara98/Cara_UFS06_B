@@ -40,7 +40,7 @@ public class App
             }
 
             ClientHandler clientHandler = new ClientHandler(clientSocket);
-            WareHouse.getInstance().add(clientHandler);
+            WineCellar.getInstance().add(clientHandler);
 
             Thread thread = new Thread(clientHandler);
             thread.start();
