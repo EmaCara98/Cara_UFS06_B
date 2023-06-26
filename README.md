@@ -17,7 +17,7 @@ Da Windows Powershell
 - Ripetere il comando con "sorted_by_price"
 - Ripetere il comando con caratteri casuali, deve mostrare messaggio di errore.
 
-//GET:
+GET:
 Da browser
 - Inserire nell'url: http://{ip}:{porta}/?red
 - Inserire nell'url: http://{ip}:{porta}/?white
