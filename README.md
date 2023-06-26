@@ -1,3 +1,4 @@
+## TRACCIA B
 # Versione TCP
 Da Windows Powershell
 Digitare il comando: telnet <ip> <porta>
