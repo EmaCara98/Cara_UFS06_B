@@ -6,6 +6,7 @@ Da Windows Powershell tramite nc/telnet
 - Digitare il comando: sorted_by_name
 - Digitare il comando: sorted_by_price
 - Digitare caratteri casuali, deve mostrare "Comando inesistente"
+- Run TCP_Client.java e testare il Client Grafico
 
 ## Versione HTTP - Run main: HTTP_Server.java
 
