@@ -9,20 +9,19 @@ Da Windows Powershell tramite nc/telnet
 - Run TCP_Client.java e testare il Client Grafico
 
 ## Versione HTTP - Run main: HTTP_Server.java
-
 POST:
-Da Windows Powershell
-- Digitare il comando: curl -X POST "http://{ip}:{porta}" -d "red" (Se il comando ha dato errore, digitare il comando: "Remove-item alias:curl" e poi riprovare)
-- Ripetere il comando con "white
-- Ripetere il comando con "sorted_by_name"
-- Ripetere il comando con "sorted_by_price"
-- Ripetere il comando con caratteri casuali, deve mostrare messaggio di errore.
+Da Windows Powershell (Se il comando curl dà errore, digitare il comando: "Remove-item alias:curl" e poi riprovare)
+- curl -X POST "http://{ip}:{porta}" -d "red" 
+- curl -X POST "http://{ip}:{porta}" -d "white" 
+- curl -X POST "http://{ip}:{porta}" -d "sorted_by_name"
+- curl -X POST "http://{ip}:{porta}" -d "sorted_by_price"
+- curl -X POST "http://{ip}:{porta}" -d "saasadsdsa" -->deve mostrare messaggio di errore.
 
 GET:
 Da browser
-- Inserire nell'url: http://{ip}:{porta}/?red
-- Inserire nell'url: http://{ip}:{porta}/?white
-- Inserire nell'url: http://{ip}:{porta}/?sorted_by_name
-- Inserire nell'url: http://{ip}:{porta}/?sorted_by_price
-- Inserire nell'url: http://{ip}:{porta}/?letterecasuali, deve mostrare il messaggio "Comando insesistente"
-- Inserire nell'url: http://{ip}:{porta}/letterecasuali, deve mostrare il messaggio "Error 404: Pagina non trovata"
+- http://172.16.151.18:8000/?red
+- http://172.16.151.18:8000/?white
+- http://172.16.151.18:8000/?sorted_by_name
+- http://172.16.151.18:8000/?sorted_by_price
+- http://172.16.151.18:8000/?saadsadsa --> deve mostrare il messaggio "Comando insesistente"
+- http://172.16.151.18:8000/sasaa --> deve mostrare il messaggio "Error 404: Pagina non trovata"
