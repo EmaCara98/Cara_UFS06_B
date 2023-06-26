@@ -11,7 +11,7 @@ Da Windows Powershell tramite nc/telnet
 
 POST:
 Da Windows Powershell
-- Digitare il comando: curl -X POST "http://127.0.0.1:8000" -d "red" (Se il comando ha dato errore, digitare il comando: "Remove-item alias:curl" e poi riprovare)
+- Digitare il comando: curl -X POST "http://{ip}:{porta}" -d "red" (Se il comando ha dato errore, digitare il comando: "Remove-item alias:curl" e poi riprovare)
 - Ripetere il comando con "white
 - Ripetere il comando con "sorted_by_name"
 - Ripetere il comando con "sorted_by_price"
