@@ -11,11 +11,11 @@ Da Windows Powershell tramite nc/telnet
 ## Versione HTTP - Run main: HTTP_Server.java
 POST:
 Da Windows Powershell (Se il comando curl dà errore, digitare il comando: "Remove-item alias:curl" e poi riprovare)
-- curl -X POST "http://{ip}:{porta}" -d "red" 
-- curl -X POST "http://{ip}:{porta}" -d "white" 
-- curl -X POST "http://{ip}:{porta}" -d "sorted_by_name"
-- curl -X POST "http://{ip}:{porta}" -d "sorted_by_price"
-- curl -X POST "http://{ip}:{porta}" -d "saasadsdsa" -->deve mostrare messaggio di errore.
+- curl -X POST "http://172.16.151.18:8000" -d "red" 
+- curl -X POST "http://172.16.151.18:8000" -d "white" 
+- curl -X POST "http://172.16.151.18:8000" -d "sorted_by_name"
+- curl -X POST "http://172.16.151.18:8000" -d "sorted_by_price"
+- curl -X POST "http://172.16.151.18:8000" -d "saasadsdsa" -->deve mostrare messaggio di errore.
 
 GET:
 Da browser
