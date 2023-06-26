@@ -1,5 +1,5 @@
 # TRACCIA B
-## Versione TCP - Runnare main: TCP_Server.java
+## Versione TCP - Run main: TCP_Server.java
 Da Windows Powershell tramite nc/telnet
 - Digitare il comando: red
 - Digitare il comando: white
@@ -7,7 +7,7 @@ Da Windows Powershell tramite nc/telnet
 - Digitare il comando: sorted_by_price
 - Digitare caratteri casuali, deve mostrare "Comando inesistente"
 
-## Versione HTTP - Runnare main: HTTP_Server.java
+## Versione HTTP - Run main: HTTP_Server.java
 
 POST:
 Da Windows Powershell
