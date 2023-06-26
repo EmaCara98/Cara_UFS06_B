@@ -22,7 +22,7 @@ public class WineCellar {
     }
 
     static void buildList() {
-        winelist.add(new Wine(13,"Dom Perignon Vintage Moet & Chandon 2008",225.94, "white"));
+        winelist.add(new Wine(13,"Dom Perignon Vintage Moet Chandon 2008",225.94, "white"));
         winelist.add(new Wine(14,"Pignoli Radikon Radikon 2009",133.0, "red"));
         winelist.add(new Wine(124,"Pinot Nero Elena Walch Elena Walch 2018",43.0, "red"));
         System.out.println(winelist);

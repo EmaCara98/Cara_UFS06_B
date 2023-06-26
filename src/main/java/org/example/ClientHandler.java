@@ -32,22 +32,34 @@ public class ClientHandler implements Runnable{
                 System.out.println(s);
 
                 /********* COMANDI CLIENT *********/
+                String result = "{\"wines\":";
+                boolean check = true;
                 switch(s)
                 {
                     case "red":
-                        out.println(WineCellar.getInstance().red());
+                        result += WineCellar.getInstance().red();
+                        //out.println(WineCellar.getInstance().red());
                         break;
                     case "white":
-                        out.println(WineCellar.getInstance().white());
+                        result += WineCellar.getInstance().white();
+                        //out.println(WineCellar.getInstance().white());
                         break;
                     case "sorted_by_name":
-                        out.println(WineCellar.getInstance().sorted_by_name());
+                        result += WineCellar.getInstance().sorted_by_name();
+                        //out.println(WineCellar.getInstance().sorted_by_name());
                         break;
                     case "sorted_by_price":
-                        out.println(WineCellar.getInstance().sorted_by_price());
+                        result += WineCellar.getInstance().sorted_by_price();
+                        //out.println(WineCellar.getInstance().sorted_by_price());
                         break;
                     default:
                         out.println("Comando inesistente");
+                        check = false;
+                }
+                result += "}";
+                if(check)
+                {
+                    out.println(result);
                 }
             }
 
