@@ -1,4 +1,4 @@
-# TRACCIA B - mio IP: 172.16.151.18
+# TRACCIA B - indirizzo IP: 172.16.151.18
 ## Versione TCP - Run main: TCP_Server.java
 Da Windows Powershell tramite nc/telnet
 - Digitare il comando: red
